@@ -20,19 +20,18 @@
 .container {
     width: 1120px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
 }
 .header {
-    display: flex;
-    align-items: center;
     padding: 24px 0;
     background-color: var(--blue);
     border: 0;
 }
+.container-header {
+    display: flex;
+    align-items: center;
+}
 .main-menu {
-    margin-right: auto;
-    margin-left: 640px;
+    margin-left: auto;
 }
 .main-menu-list {
     list-style: none;
@@ -50,13 +49,14 @@
     color: var(--yellow);
 }
 .first {
+    display: flex;
+    align-items: center;
     background-color: var(--blue);
     min-height: 719px;
     display: flex;
 }
 .one {
-    justify-content: left;
-    min-height: 392px;
+    /*min-height: 392px;*/
     padding: 160px 0;
     flex-direction: column;
     position: relative;
@@ -65,6 +65,7 @@
     max-width: 610px;
     max-height: 206px;
     font-size: 51px;
+    font-weight: normal;
     line-height: 67px;
     letter-spacing: 1.12px;
     margin-right: auto;
@@ -123,16 +124,17 @@
     background-color: var(--white);
 }
 .two {
+    display: flex;
     padding: 160px 0 80px;
 }
 .second-topic {
-    height: 303px;
     width: 470px;
     max-width: 583px;
     font-size: 42px;
+    font-weight: normal;
     line-height: 50.4px;
     letter-spacing: 1.12px;
-    color: var(--darkestblue);
+    color: var(--black);
 }
 .shapes2 {
     display: flex;
@@ -140,7 +142,6 @@
     margin-left: auto;
     align-items: center;
     justify-content: flex-end;
-    flex: content;
     height: 392px;
     width: 416px;
 }
@@ -189,12 +190,12 @@
     align-self: center;
 }
 .third {
-    min-height: 1210px;
+    padding: 50px;
     background-color: var(--white);
+    /*padding*/
 }
 .three {
-    min-height: 420px;
-    flex: content;
+    display: flex;
     flex-direction: row;
     padding-top: 80px;
 }
@@ -208,7 +209,6 @@
 .cardthree {
     min-height: 420px;
     display: flex;
-    flex: content;
     flex-direction: column;
     padding: 40px;
     background-color: var(--grey);
@@ -222,12 +222,14 @@
 }
 .third-heading {
     font-size: 32px;
+    font-weight: normal;
     line-height: 38px;
     padding-top: 10px;
     color: var(--black);
 }
 .casestudy {
     display: flex;
+    width: 160px;
     position: relative;
     align-items: center;
     text-decoration: none;
@@ -240,20 +242,23 @@
 .casestudy:hover svg path {
     fill: var(--black);
 }
+.longer {
+    width: 320px;
+}
 .four {
-    min-height: 420px;
-    flex: content;
+    display: flex;
     flex-direction: row-reverse;
-    padding-top: 80px;
+    padding-top: 124px;
 }
 .fourth {
-    min-height: 853px;
+    /*min-height: 853px;*/
     background-color: var(--yellow);
-    flex: content;
+    display: flex;
+    padding-top: 124px;
+    padding-bottom: 122px;
 }
 .all-cases {
-    min-height: 121px;
-    flex: content;
+    display: flex;
     justify-content: center;
     padding-top: 56px;
     color: var(--white);
@@ -279,19 +284,20 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 853px;
+ /*padding*/
 }
 .fourth-text-box {
     display: flex;
     align-self: flex-start;
     width: 493.56px;
-    min-height: 414px;
+    /*min-height: 414px;*/
     flex-direction: column;
     position: absolute;
     justify-content: space-between
 }
 .fourth-topic {
     font-size: 51px;
+    font-weight: normal;
     line-height: 67px;
     letter-spacing: 1.12px;
     width: 493.56px;
@@ -308,9 +314,10 @@
     align-self: flex-end;
 }
 .fifth {
-    min-height: 853px;
     background-color: var(--white);
-    flex: content;
+}
+.medium {
+    width: 235px;
 }
 .six {
     display: flex;
@@ -321,13 +328,13 @@
 }
 .fifth-topic {
     font-size: 51px;
+    font-weight: normal;
     line-height: 67px;
     letter-spacing: 1.12px;
     width: 100%;
     color: var(--black);
 }
 .lot-to-say-box {
-    min-height: 405px;
     display: flex;
     margin-top: 55px;
     justify-content: space-between;
@@ -336,7 +343,6 @@
 .to-say {
     display: flex;
     width: 352px;
-    height: 405px;
     background-color: var(--blue);
     font-size: 24px;
     line-height: 33.6px;
@@ -355,6 +361,7 @@
     font-size: 24px;
     line-height: 34px;
     margin-top: 21px;
+    margin-bottom: 49px;
     color: var(--white);
 }
 .square {
@@ -362,6 +369,7 @@
     display: flex;
     margin-left: auto;
     margin-top: auto;
+    width: 18px;
 }
 .more-stories:hover svg path {
     fill: var(--white);
@@ -376,18 +384,20 @@
 .six .casestudy {
     margin-left: auto;
     padding-top: 31px;
+    padding-bottom: 66px;
 }
 .sixth {
     min-height: 510px;
     background-color: var(--darkblue);
-    flex: content;
     position: relative;
     overflow: hidden;
 }
 .seven {
+    display: flex;
     width: 1120px;
-    height: 510px;
     justify-content: space-between;
+    padding-top: 140px;
+    padding-bottom: 104px;
 }
 .seven-text {
     display: flex;
@@ -396,6 +406,7 @@
 }
 .sixth-topic {
     font-size: 51px;
+    font-weight: normal;
     line-height: 67px;
     letter-spacing: 1.12px;
     width: 582px;
@@ -421,11 +432,7 @@
     color: var(--white);
 }
 .sixth-figures {
-    display: flex;
-    flex-direction: column;
-    height: 495px;
-    width: 330px;
-    margin-top: -470px;
+    margin-top: -375px;
     margin-right: -140px;
 }
 .sixth-round-top {
@@ -449,20 +456,14 @@
     margin-top: 78px;
 }
 .footer {
-    height: 359px;
     width: 100%;
     background-color: var(--darkblue);
-    flex-direction: column;
 }
 .footer-box {
-    width: 1120px;
-    height: 247px;
-    margin: 43px 160px 104px;
-    text-align: middle;
-    flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
-    align-content: flex-start;
+    padding: 43px 160px 104px;
+    justify-content: center;
+
 }
 .address {
     width: 247px;
@@ -543,26 +544,43 @@
     display: flex;
     border-bottom: white 1px solid;
 }
+.subscribe-field {
+    /*font-size: 12px;
+    line-height: 34px;*/
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+    padding: 0;
+}
+.legend {
+    font-size: 12px;
+    line-height: 34px;
+}
+.e-mail-field {
+    width: 280px;
+    font-weight: 500;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 7px;
+    background-color: var(--darkblue);
+    border: none;
+}
 .no-span {
     font-size: 12px;
     line-height: 33.6px;
     text-transform: uppercase;
 }
 .news-button {
-    display: flex;
-    width: 352px;
+    /*display: flex;*/
     color: var(--white);
     background-color: transparent;
     border: transparent;
     cursor: pointer;
-    font-size: 17px;
+    /*font-size: 17px;
     line-height: 34px;
-    list-style-type: none;
+    list-style-type: none;*/
 }
-.news-button:hover {
-    color: var(--yellow);
-}
-.subarrow:hover svg path {
+.news-button:hover svg path {
     fill: var(--yellow);
 }
 .subarrow {
