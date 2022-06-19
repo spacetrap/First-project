@@ -1,2 +1,2 @@
 # First-project
-Site is a part of online course study
+This site is a part of HTML and CSS course study
